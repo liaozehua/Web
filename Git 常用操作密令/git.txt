@@ -1,0 +1,162 @@
+备注： **  代表一个文件夹    *** 代表一个文件（例如***.html  ***.txt） **** 代表一段文字
+
+一：Git 创建版本库
+
+1.  mkdir  **						//创建一个空目录
+
+2.  cd  ** 							//进入到所创建的空目录
+
+3.	pwd								//显示当前目录
+
+4.  git init            			//把当前目录变成可以管理的仓库
+
+5.  在目录下面创建任何文件，编辑任何内容
+
+6.  git add  ***       				//把文件添加到仓库
+
+7.  git commom -m "****"			//-m 后面跟着一段本次提交的说明，方便历史浏览改动记录
+
+
+
+二： 版本修改
+
+2.1 版本查看
+
+2.1.1  git status 					//告诉我们哪些文件被修改了还未提交
+
+2.1.2  git diff ***					//告诉我们文件哪些地方被改动了
+
+2.1.3  git diff HEAD -- ***			//查看工作区和版本库里面最新版本的区别
+
+2.2  版本回退
+
+2.2.1  git reset --hard HEAD^		//会退到上一个版本	单个^表示上个版本，两个^表示回到上上个版本，以此类推
+
+2.2.2  git reset --hard commit-id(版本号)		//回退到指定id的版本号
+
+2.2.3  git reset HEAD ***			//撤销 add 操作 对文件的提交
+
+2.3  历史查看
+
+2.3.1  git log						//查看提交信息，显示从近到远
+
+2.3.2  git log --pretty=oneline		//更直观的查看提交信息，显示从近到远
+
+2.3.3  git reflog					//查看命令历史，以便确定要回到哪个id版本
+
+2.4  撤销修改
+
+2.4.1  git checkout -- ***			//丢弃工作区的修改，分两种情况
+（1）修改后还没有使用 add 操作,  撤销后和版本库一模一样
+ (2) 修改后已经进行了 add 操作，未提交之前，再进行文件内容修改，撤销后回到 add操作 这个步骤
+ 总之，就是让这个文件回到最近一次git commit或git add时的状态。
+
+2.5  删除文件
+
+2.5.1  rm ***						//删除工作区文件
+
+2.5.2  git rm ***					//删除版本库文件
+
+
+
+备注：
+操作 1 ：修改了工作区，想撤回修改，git checkout *** 撤回工作区的修改，回到工作区文件未修改之前
+
+操作 2 ：修改了工作区之后进行了 add 提交操作, git reset HEAD ***， 撤销了add 操作提交，之后 git checkout *** ,撤回工作区的修改，回到工作区文件未修改之前
+
+操作 3 ：修改工作区，进行了 add 提交操作, 再修改工作区，  先 git checkout ***,撤回到 add 操作提交这个步骤, 再 git reset HEAD *** ,撤销 add 操作提交，再 git checkout ***, 回到工作区文件未修改之前
+
+
+
+
+三.  远程仓库
+
+3.1  创建ssh 密钥
+
+3.1.1  ssh-keygen -t rsa -C "eamil(邮箱)"		//生成密钥
+
+3.1.2  ssh -T git@github.com 					//测试与远程git仓库是否链接
+
+3.2  添加远程库
+
+3.2.1 	git remote add origin git@github.com:userName(git用户名)/**.git 					//userName代表git用户名  **代表项目名，也就是库
+
+3.2.2 	git push -u origin master		//省略 -u 参数也可把本地工作区提交到远程仓库，添加 u参数只是 把master分支和远程的master分支关联起来
+
+3.3  从远程仓库克隆库到本地工作区
+
+3.3.1 git clone git@github.com:userName/**.git 		//从远程克隆一个库到本地
+
+
+四.  分支管理
+
+4.1  创建和合并分支
+
+4.1.1  创建一个分支 git branch ****							//**** 代表分支名
+
+4.1.2  切换分支 	   git checkout  ****						//**** 代表分支名
+
+4.1.3  创建并合并分支  git checkout -b ****					//**** 代表分支名
+
+4.1.4  查看当前分支  git branch
+
+4.1.5  查看远程分支  git branch -r
+
+4.1.6  合并分支    git merge ****							//合并指定分支到当前分支
+
+4.2    解决冲突
+
+4.2.1  看到分支合并图 git log --graph
+
+4.2.2  创建分支，修改文件，commit提交，切换到主分支，继续修改文件，commit提交，此时 git merge 合并分支就会冲突，此时需要再次修改文件，再次commit提交，就解决冲突
+
+4.3    分支管理策略
+
+4.3.1  git merge --no-ff -m "****" 某分支     				//合并某分支到当前分支，默认使用Fast forward 模式，但但这种模式删除分支后会丢掉分支的信息
+															//加 --no-ff 参数，可以从历史分支上看到分支信息
+
+4.4    Bug分支
+
+4.4.1  储存内容  git stash									//把某个阶段未完成的工作保存起来，修改bug之后可以恢复内容
+
+4.4.2  恢复储存的内容  git stash pop							//恢复内容的同时删除git stash 保存的内容
+
+4.4.3  查看保存的内容记录 git stash list 						//
+
+4.4.4  强行删除分支	git branch -D 分支名						//-D 大写的参数D 强制删除分支														
+
+4.4.5  本地仓库与远程仓库的抓取与推送
+
+4.4.5.1 	查看远程库信息	git remote -v
+
+4.4.5.2     查看远程库与本地库的信息  git remote --all
+
+4.4.5.3     推送分支    git push origin Dev 				    //推送 dev 分支到远程 origin 库的 同名分支
+
+4.4.5.4 	git checkout -b dev origin/dev 					//拉取远程分支并创建本地分支，并切换到创建的本地分支
+
+4.4.5.5    设置本地分支与远程分支的链接  git branch --set-upstream-to=origin/dev dev
+
+4.4.5.6     抓取远程分支   git pull		合并冲突，解决思路与分支管理的解决冲突一样
+
+五.标签管理	
+
+5.1  创建与查询标签
+
+5.1.1  在某个分支上,设置标签		git tag v1.0 				//设置某个分支的历史记录标签为v1.0
+
+5.1.2  在某个commit id 上打分支  git tag v0.9 fdfasd12(commit id)
+
+5.1.3  查看标签信息			git show <tagname>	
+
+5.1.4  创建带有说明的标签名   git tag -a v0.1 -m "****" dfsaf12(commit id)						
+
+5.2 操作标签
+
+5.2.1  删除标签     git tag -d tagname									
+
+5.2.2  推送标签     git push origin v1.0
+
+5.2.3  推送所有本地标签  git push origin --tags
+
+5.2.4  删除远程标签    先删除本地标签， git tag -d tagname, 之后在执行 git push origin :refs/tags/tagname,  就删除远程标签了

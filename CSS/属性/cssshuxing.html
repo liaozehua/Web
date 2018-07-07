@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css属性</title>
+	<style>
+		div.d1 {
+			border: 1px solid #ccc;
+			padding: 15px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>动画属性</h2>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">@keyframes</span>
+			<span class="s2">描述：定义一个动画,@keyframes定义的动画名称用来被animation-name所使用</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：@keyframes animationname {keyframes-selector {css-styles;}}</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animationname</span>
+				<span class="s5">说明：必需的。定义animation的名称</span>
+			</p>
+			
+			<p class="p1">
+				<span class="s4">值：keyframes-selector</span>
+				<span class="s5">说明：必需的。动画持续时间的百分比。合法值：0-100% from (和0%相同) to (和100%相同) 注意： 您可以用一个动画keyframes-selectors。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：css-styles</span>
+				<span class="s5">说明：必需的。一个或多个合法的CSS样式属性</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation</span>
+			<span class="s2">描述：复合属性。检索或设置对象所应用的动画特效</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation: name duration timing-function delay iteration-count direction fill-mode play-state;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-name</span>
+				<span class="s5">说明：指定要绑定到选择器的关键帧的名称</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-duration</span>
+				<span class="s5">说明：动画指定需要多少秒或毫秒完成</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-timing-function</span>
+				<span class="s5">说明：设置动画将如何完成一个周期</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-delay</span>
+				<span class="s5">说明：设置动画在启动前的延迟间隔</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-iteration-count</span>
+				<span class="s5">说明：定义动画的播放次数</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-direction</span>
+				<span class="s5">说明：指定是否应该轮流反向播放动画。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-fill-mode</span>
+				<span class="s5">说明：规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：animation-play-state</span>
+				<span class="s5">说明：指定动画是否正在运行或已暂停</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：initial</span>
+				<span class="s5">说明：设置属性为其默认值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：从父元素继承属性</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation-name</span>
+			<span class="s2">描述：检索或设置对象所应用的动画名称 ,必须与规则@keyframes配合使用，因为动画名称由@keyframes定义</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation-name: keyframename|none;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：keyframename</span>
+				<span class="s5">说明：指定要绑定到选择器的关键帧的名称</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：none</span>
+				<span class="s5">说明：指定有没有动画（可用于覆盖从级联的动画）</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation-duration</span>
+			<span class="s2">描述：检索或设置对象动画的持续时间</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation-duration: time;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：time</span>
+				<span class="s5">说明：指定动画播放完成花费的时间。默认值为 0，意味着没有动画效果</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation-timing-function</span>
+			<span class="s2">描述：检索或设置对象动画的过渡类型</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation-timing-function: value;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：linear</span>
+				<span class="s5">说明：动画从头到尾的速度是相同的。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：ease</span>
+				<span class="s5">说明：默认。动画以低速开始，然后加快，在结束前变慢</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：ease-in	</span>
+				<span class="s5">说明：动画以低速开始。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：ease-out</span>
+				<span class="s5">说明：动画以低速结束。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：ease-in-out</span>
+				<span class="s5">说明：动画以低速开始和结束。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：cubic-bezier(n,n,n,n)</span>
+				<span class="s5">说明：在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation-delay</span>
+			<span class="s2">描述：检索或设置对象动画的延迟时间</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation-delay: time;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：time</span>
+				<span class="s5">说明：可选。定义动画开始前等待的时间，以秒或毫秒计。默认值为0</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation-iteration-count</span>
+			<span class="s2">描述：检索或设置对象动画的循环次数</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation-iteration-count: value;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：n</span>
+				<span class="s5">说明：一个数字，定义应该播放多少次动画</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：infinite</span>
+				<span class="s5">说明：指定动画应该播放无限次（永远）</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation-direction</span>
+			<span class="s2">描述：检索或设置对象动画在循环中是否反向运动</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation-direction: normal|reverse|alternate|alternate-reverse|initial|inherit;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：normal</span>
+				<span class="s5">说明：默认值。动画按正常播放。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：reverse</span>
+				<span class="s5">说明：动画反向播放。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：alternate</span>
+				<span class="s5">说明：动画在奇数次（1、3、5...）正向播放，在偶数次（2、4、6...）反向播放。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：alternate-reverse</span>
+				<span class="s5">说明：动画在奇数次（1、3、5...）反向播放，在偶数次（2、4、6...）正向播放。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：initial</span>
+				<span class="s5">说明：设置该属性为它的默认值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit	</span>
+				<span class="s5">说明：从父元素继承该属性</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">animation-play-state</span>
+			<span class="s2">描述：检索或设置对象动画的状态</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：animation-play-state: paused|running;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：paused</span>
+				<span class="s5">说明：指定暂停动画</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：running</span>
+				<span class="s5">说明：指定正在运行的动画</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<h2>背景属性</h2>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background</span>
+			<span class="s2">描述：复合属性。设置对象的背景特性</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-color</span>
+				<span class="s5">说明：指定要使用的背景颜色</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-position</span>
+				<span class="s5">说明：指定背景图像的位置</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-size</span>
+				<span class="s5">说明：指定背景图片的大小</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-repeat</span>
+				<span class="s5">说明：指定如何重复背景图像</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-origin</span>
+				<span class="s5">说明：指定背景图像的定位区域</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-clip</span>
+				<span class="s5">说明：指定背景图像的绘画区域</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-attachment</span>
+				<span class="s5">说明：设置背景图像是否固定或者随着页面的其余部分滚动</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：background-image</span>
+				<span class="s5">说明：指定要使用的一个或多个背景图像</span>
+			</p>
+
+		</div>
+
+	</div>
+	
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-attachment</span>
+			<span class="s2">描述：设置或检索背景图像是随对象内容滚动还是固定的。必须先指定background-image属性。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：scroll</span>
+				<span class="s5">说明：背景图片随页面的其余部分滚动。这是默认</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：fixed</span>
+				<span class="s5">说明：背景图像是固定的</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定background-attachment的设置应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+	
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-color</span>
+			<span class="s2">描述：	设置或检索对象的背景颜色。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：color</span>
+				<span class="s5">说明：指定背景颜色。在CSS颜色值近可能的寻找一个颜色值的完整列表。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：transparent</span>
+				<span class="s5">说明：指定背景颜色应该是透明的。这是默认</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定背景颜色，应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-image</span>
+			<span class="s2">描述：设置或检索对象的背景图像。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：url('URL')</span>
+				<span class="s5">说明：图像的URL</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：none</span>
+				<span class="s5">说明：无图像背景会显示。这是默认</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定背景图像应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-position</span>
+			<span class="s2">描述：设置或检索对象的背景图像位置。必须先指定background-image属性。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：left top   or   left center   or   left bottom   or  right top   or   right center   or   right bottom   or   center top   or   center center   or   center bottom</span>
+				<span class="s5">说明：如果仅指定一个关键字，其他值将会是"center"</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：x% y%</span>
+				<span class="s5">说明：第一个值是水平位置，第二个值是垂直。左上角是0％0％。右下角是100％100％。如果仅指定了一个值，其他值将是50％。 。默认值为：0％0％</span>
+			</p>
+			
+			<p class="p1">
+				<span class="s4">值：xpos ypos</span>
+				<span class="s5">说明：第一个值是水平位置，第二个值是垂直。左上角是0。单位可以是像素（0px0px）或任何其他 CSS单位。如果仅指定了一个值，其他值将是50％。你可以混合使用％和positions</span>
+			</p>
+			
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定background-position属性设置应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+	
+
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-repeat</span>
+			<span class="s2">描述：设置或检索对象的背景图像如何铺排填充。必须先指定background-image属性。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：repeat</span>
+				<span class="s5">说明：背景图像将向垂直和水平方向重复。这是默认</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：repeat-x</span>
+				<span class="s5">说明：只有水平位置会重复背景图像</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：repeat-y</span>
+				<span class="s5">说明：只有垂直位置会重复背景图像</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：no-repeat</span>
+				<span class="s5">说明：background-image不会重复</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定background-repea属性设置应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+	
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-clip</span>
+			<span class="s2">描述：指定对象的背景图像向外裁剪的区域</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-box</span>
+				<span class="s5">说明：默认值。背景绘制在边框方框内（剪切成边框方框）</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：padding-box</span>
+				<span class="s5">说明：背景绘制在衬距方框内（剪切成衬距方框）。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：content-box</span>
+				<span class="s5">说明：背景绘制在内容方框内（剪切成内容方框）</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-origin</span>
+			<span class="s2">描述：S设置或检索对象的背景图像计算background-position时的参考原点(位置)。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：padding-box</span>
+				<span class="s5">说明：背景图像填充框的相对位置</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-box</span>
+				<span class="s5">说明：背景图像边界框的相对位置</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：content-box</span>
+				<span class="s5">说明：背景图像的相对位置的内容框</span>
+			</p>
+
+		</div>
+
+	</div>
+	
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">background-size</span>
+			<span class="s2">描述：检索或设置对象的背景图像的尺寸大小。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：length</span>
+				<span class="s5">说明：设置背景图片高度和宽度。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为 auto(自动)	</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：percentage</span>
+				<span class="s5">说明：将计算相对于背景定位区域的百分比。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为"auto(自动)"</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：cover</span>
+				<span class="s5">说明：此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：contain</span>
+				<span class="s5">说明：此时会保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小</span>
+			</p>
+
+		</div>
+
+	</div>
+	
+	<h2>边框(Border) 和 轮廓(Outline) 属性</h2>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border</span>
+			<span class="s2">描述：复合属性。设置对象边框的特性。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-width</span>
+				<span class="s5">说明：指定边框的宽度</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-style</span>
+				<span class="s5">说明：指定边框的样式</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-color</span>
+				<span class="s5">说明：指定边框的颜色</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定应该从父元素继承border属性值</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-top(right|bottom|left)</span>
+			<span class="s2">描述：复合属性。设置对象顶(右|底|左)边框的特性</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-top(right|bottom|left)-width</span>
+				<span class="s5">说明：指定顶(右|底|左)部边框宽度</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-top(right|bottom|left)-style</span>
+				<span class="s5">说明：指定顶(右|底|左)部边框样式</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-top(right|bottom|left)-color</span>
+				<span class="s5">说明：指定顶(右|底|左)部边框颜色</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定border-bottom 属性值，应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-top(right|bottom|left)-color</span>
+			<span class="s2">描述：设置或检索对象的顶(右|底|左)部边框颜色</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：color</span>
+				<span class="s5">说明：指定背景颜色。在CSS 颜色值 查找颜色值的完整列表。</span>
+			</p>
+			
+			<p class="p1">
+				<span class="s4">值：transparent</span>
+				<span class="s5">说明：指定边框的颜色应该是透明的。这是默认</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定边框的颜色，应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-top(right|bottom|left)-style</span>
+			<span class="s2">描述：设置或检索对象的顶(右|底|左)部边框样式</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：none</span>
+				<span class="s5">说明：指定无边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：hidden</span>
+				<span class="s5">说明：与"none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：dotted</span>
+				<span class="s5">说明：指定点状边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：dashed</span>
+				<span class="s5">说明：指定虚线边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：solid</span>
+				<span class="s5">说明：指定实线边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：double</span>
+				<span class="s5">说明：指定一个双边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：groove</span>
+				<span class="s5">说明：定义双线。双线的宽度等于 border-width 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：ridge</span>
+				<span class="s5">说明：定义三维菱形边框。其效果取决于 border-color 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inset</span>
+				<span class="s5">说明：定义三维凹边框。其效果取决于 border-color 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：outset</span>
+				<span class="s5">说明：定义三维凸边框。其效果取决于 border-color 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定应该从父元素继承边框样式</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-top(right|bottom|left)-width</span>
+			<span class="s2">描述：设置或检索对象的顶(右|底|左)部边框宽度</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：thin</span>
+				<span class="s5">说明：定义细的下边框	</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：medium</span>
+				<span class="s5">说明：默认值。定义中等的下边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：thick</span>
+				<span class="s5">说明：定义粗的下边框	</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：length</span>
+				<span class="s5">说明：允许您自定义下边框的宽度</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：规定应该从父元素继承边框宽度</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-color</span>
+			<span class="s2">描述：置或检索对象的边框颜色</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：color</span>
+				<span class="s5">说明：指定背景颜色。在CSS颜色值查找颜色值的完整列表</span>
+			</p>
+			
+			<p class="p1">
+				<span class="s4">值：transparent</span>
+				<span class="s5">说明：指定边框的颜色应该是透明的。这是默认</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定边框的颜色，应该从父元素继承</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">例子：border-color：#000 #000 #000 #000</span>
+				<span class="s5">说明：设置边框的顶，右，底，左的颜色</span>
+			</p>
+
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-style</span>
+			<span class="s2">描述：设置或检索对象的顶(右|底|左)部边框样式</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：none</span>
+				<span class="s5">说明：指定无边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：hidden</span>
+				<span class="s5">说明：与"none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：dotted</span>
+				<span class="s5">说明：指定点状边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：dashed</span>
+				<span class="s5">说明：指定虚线边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：solid</span>
+				<span class="s5">说明：指定实线边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：double</span>
+				<span class="s5">说明：指定一个双边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：groove</span>
+				<span class="s5">说明：定义双线。双线的宽度等于 border-width 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：ridge</span>
+				<span class="s5">说明：定义三维菱形边框。其效果取决于 border-color 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inset</span>
+				<span class="s5">说明：定义三维凹边框。其效果取决于 border-color 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：outset</span>
+				<span class="s5">说明：定义三维凸边框。其效果取决于 border-color 的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定应该从父元素继承边框样式</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">例子：border-style: solid solid solid solid</span>
+				<span class="s5">说明：设置边框的顶，右，底，左 都为实线</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-width</span>
+			<span class="s2">描述：设置或检索对象的顶(右|底|左)部边框宽度</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：thin</span>
+				<span class="s5">说明：定义细的下边框	</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：medium</span>
+				<span class="s5">说明：默认值。定义中等的下边框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：thick</span>
+				<span class="s5">说明：定义粗的下边框	</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：length</span>
+				<span class="s5">说明：允许您自定义下边框的宽度</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：规定应该从父元素继承边框宽度</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">例子：border-width:2px 3px 4px 5px</span>
+				<span class="s5">说明：设置边框的顶，右，底，左的粗细</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">outline</span>
+			<span class="s2">描述：复合属性。设置或检索对象外的线条轮廓</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：2</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：outline-color</span>
+				<span class="s5">说明：规定边框的颜色。参阅：outline-color 中可能的值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：outline-style</span>
+				<span class="s5">说明：规定边框的样式。参阅：outline-style 中可能的值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：outline-width</span>
+				<span class="s5">说明：规定边框的宽度。参阅：outline-width 中可能的值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：规定应该从父元素继承 outline 属性的设置。</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">outline-color</span>
+			<span class="s2">描述：设置或检索对象外的线条轮廓的颜色</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：2</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：color</span>
+				<span class="s5">说明：指定轮廓颜色。在 CSS颜色值寻找颜色值的完整列表。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：invert</span>
+				<span class="s5">说明：默认。执行颜色反转（逆向的颜色）。可使轮廓在不同的背景颜色中都是可见</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：规定应该从父元素继承轮廓颜色的设置。</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">outline-style</span>
+			<span class="s2">描述：设置或检索对象外的线条轮廓的样式。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：2</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：none</span>
+				<span class="s5">说明：默认。定义无轮廓。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：dotted</span>
+				<span class="s5">说明：定义点状的轮廓。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：dashed</span>
+				<span class="s5">说明：定义虚线轮廓。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：solid</span>
+				<span class="s5">说明：定义实线轮廓。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：double</span>
+				<span class="s5">说明：定义双线轮廓。双线的宽度等同于 outline-width 的值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：groove</span>
+				<span class="s5">说明：定义 3D 凹槽轮廓。此效果取决于 outline-color 值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：ridge</span>
+				<span class="s5">说明：定义 3D 凸槽轮廓。此效果取决于 outline-color 值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inset</span>
+				<span class="s5">说明：定义 3D 凹边轮廓。此效果取决于 outline-color 值。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：outset</span>
+				<span class="s5">说明：定义 3D 凸边轮廓。此效果取决于 outline-color 值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：规定应该从父元素继承轮廓样式的设置。</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">outline-width</span>
+			<span class="s2">描述：设置或检索对象外的线条轮廓的宽度。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：2</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：thin</span>
+				<span class="s5">说明：规定细轮廓</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：medium</span>
+				<span class="s5">说明：默认。规定中等的轮廓</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：thick</span>
+				<span class="s5">说明：规定粗的轮廓</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：length</span>
+				<span class="s5">说明：允许您规定轮廓粗细的值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：规定应该从父元素继承轮廓宽度的设置。</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-radius</span>
+			<span class="s2">描述：设置或检索对象使用圆角边框。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：border-radius: 1-4 length|% / 1-4 length|%;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：length</span>
+				<span class="s5">说明：定义弯道的形状。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：%</span>
+				<span class="s5">说明：使用%定义角落的形状。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">例子：border-radius: 5px 5px 5px 5px </span>
+				<span class="s5">说明：等同于border-top(bottom)-left(right)-radius  左上角，右上角，左下角，右下角</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-image</span>
+			<span class="s2">描述：设置或检索对象的边框样式使用图像来填充</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：border-image: source slice width outset repeat|initial|inherit;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-image-source</span>
+				<span class="s5">说明：	用于指定要用于绘制边框的图像的位置</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-image-slice</span>
+				<span class="s5">说明：图像边界向内偏移</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-image-width</span>
+				<span class="s5">说明：图像边界的宽度</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-image-outset</span>
+				<span class="s5">说明：用于指定在边框外部绘制 border-image-area 的量</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：border-image-repeat</span>
+				<span class="s5">说明：用于设置图像边界是否应重复（repeat）、拉伸（stretch）或铺满（round）</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-image-outset</span>
+			<span class="s2">描述：规定边框图像超过边框的量</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：border-image-outset: length|number;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：length</span>
+				<span class="s5">说明： 设置边框图像与边框（border-image）的距离，默认为0。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：number</span>
+				<span class="s5">说明：代表相应的 border-width 的倍数</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-image-repeat</span>
+			<span class="s2">描述：规定图像边框是否应该被重复（repeated）、拉伸（stretched）或铺满（rounded）</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：border-image-repeat: stretch|repeat|round|initial|inherit;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：stretch</span>
+				<span class="s5">说明：默认值。拉伸图像来填充区域</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：repeat</span>
+				<span class="s5">说明：平铺（repeated）图像来填充区域。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：round</span>
+				<span class="s5">说明：类似 repeat 值。如果无法完整平铺所有图像，则对图像进行缩放以适应区域。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：space</span>
+				<span class="s5">说明：类似 repeat 值。如果无法完整平铺所有图像，扩展空间会分布在图像周围</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：initial	</span>
+				<span class="s5">说明：将此属性设置为默认值。查看 initial</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：从父元素中继承该属性。 查看 inherit</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-image-slice</span>
+			<span class="s2">描述：规定图像边框的向内偏移。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：border-image-slice: number|%|fill;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：number</span>
+				<span class="s5">说明：数字表示图像的像素（位图图像）或向量的坐标（如果图像是矢量图像）</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：%</span>
+				<span class="s5">说明：百分比图像的大小是相对的：水平偏移图像的宽度，垂直偏移图像的高度	</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：fill</span>
+				<span class="s5">说明：保留图像的中间部分</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-image-source</span>
+			<span class="s2">描述：规定要使用的图像，代替 border-style 属性中设置的边框样式</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：border-image-source: none|image;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：none</span>
+				<span class="s5">说明：没有图像被使用</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：image</span>
+				<span class="s5">说明：边框使用图像的路径</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">border-image-width</span>
+			<span class="s2">描述：规定图像边框的宽度。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：border-image-width: number|%|auto;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：number</span>
+				<span class="s5">说明：表示相应的border-width 的倍数</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：%</span>
+				<span class="s5">说明：边界图像区域的大小：横向偏移的宽度的面积，垂直偏移的高度的面积</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：auto</span>
+				<span class="s5">说明：如果指定了，宽度是相应的image slice的内在宽度或高度</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">box-shadow</span>
+			<span class="s2">描述：向方框添加一个或多个阴影。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：box-shadow: h-shadow v-shadow blur spread color inset;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：h-shadow</span>
+				<span class="s5">说明：必需的。水平阴影的位置。允许负值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：v-shadow</span>
+				<span class="s5">说明：	必需的。垂直阴影的位置。允许负值</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：blur</span>
+				<span class="s5">说明：可选。模糊距离</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：spread</span>
+				<span class="s5">说明：	可选。阴影的大小</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：color</span>
+				<span class="s5">说明：可选。阴影的颜色。在CSS颜色值寻找颜色值的完整列表</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inset</span>
+				<span class="s5">说明：可选。从外层的阴影（开始时）改变阴影内侧阴影</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<h2>盒子(Box) 属性</h2>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">overflow-x</span>
+			<span class="s2">描述：如果内容溢出了元素内容区域，是否对内容的左/右边缘进行裁剪。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：overflow-x: visible|hidden|scroll|auto|no-display|no-content;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：visible</span>
+				<span class="s5">说明：不裁剪内容，可能会显示在内容框之外。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：hidden</span>
+				<span class="s5">说明：裁剪内容 - 不提供滚动机制。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：scroll</span>
+				<span class="s5">说明：裁剪内容 - 提供滚动机制。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：auto</span>
+				<span class="s5">说明：如果溢出框，则应该提供滚动机制。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：no-display</span>
+				<span class="s5">说明：如果内容不适合内容框，则删除整个框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：no-content</span>
+				<span class="s5">说明：如果内容不适合内容框，则隐藏整个内容。</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">overflow-y</span>
+			<span class="s2">描述：如果内容溢出了元素内容区域，是否对内容的上/下边缘进行裁剪。</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：overflow-y: visible|hidden|scroll|auto|no-display|no-content;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：visible</span>
+				<span class="s5">说明：不裁剪内容，可能会显示在内容框之外。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：hidden</span>
+				<span class="s5">说明：裁剪内容 - 不提供滚动机制。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：scroll</span>
+				<span class="s5">说明：裁剪内容 - 提供滚动机制。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：auto</span>
+				<span class="s5">说明：如果溢出框，则应该提供滚动机制。</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：no-display</span>
+				<span class="s5">说明：如果内容不适合内容框，则删除整个框</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：no-content</span>
+				<span class="s5">说明：如果内容不适合内容框，则隐藏整个内容。</span>
+			</p>
+
+		</div>
+
+	</div>
+
+
+	<h2>颜色(Color) 属性</h2>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">color-profile</span>
+			<span class="s2">描述：允许使用源的颜色配置文件的默认以外的规范</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：无</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：无</span>
+				<span class="s5">说明：无</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">opacity</span>
+			<span class="s2">描述：设置一个元素的透明度级别</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：opacity: value|inherit;</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：value</span>
+				<span class="s5">说明：指定不透明度。从0.0（完全透明）到1.0（完全不透明）</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：Opacity属性的值应该从父元素继承</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">rendering-intent</span>
+			<span class="s2">描述：允许超过默认颜色配置文件渲染意向的其他规范</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：3</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：无</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：无</span>
+				<span class="s5">说明：无</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<h2>内边距(Padding) 属性</h2>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1">padding</span>
+			<span class="s2">描述：在一个声明中设置所有填充属性</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：1</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：length</span>
+				<span class="s5">说明：规定以具体单位计的填充值，比如像素、厘米等。默认值是 0px</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：%</span>
+				<span class="s5">说明：规定基于父元素的宽度的百分比的填充</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：inherit</span>
+				<span class="s5">说明：指定应该从父元素继承padding</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="d1">
+		<div class="d2">
+			<span class="s1"></span>
+			<span class="s2">描述：</span>
+		</div>	
+		<div class="d3">
+			<p class="p1">
+				<span class="s4">css版本：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">语法：</span>
+			</p>
+
+			<p class="p1">
+				<span class="s4">值：</span>
+				<span class="s5">说明：</span>
+			</p>
+
+		</div>
+
+	</div>
+
+
+	
+
+
+
+</body>
+</html>

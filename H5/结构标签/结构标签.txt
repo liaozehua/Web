@@ -1,0 +1,121 @@
+1.结构标签
+
+主流浏览器支持的
+
+article 页面上结构完整并且内容独立 例如一篇文章、报道、小说
+
+aside：用来转载非正文内容，对于主题内容的说明 例如广告 侧边栏
+
+section：定义文档中的节，例如小说中的一章
+
+header：定义文章的头部，通常是一些引导和导航信息
+
+footer：定义section或document的页脚
+
+nav：定义显示导航链接
+
+time：定义日期或者时间，或者两者
+
+main：规定文档的主要内容（不能出现一个以上的main元素）
+
+<figure>：标签包含独立的媒体内容，图像、图标、照片等
+
+<figcaption>：标签定义figure的元素标题
+
+<details>：描述文档某个部分细节，而这个细节并不需要文档加载时就展示，而是可以折叠
+
+<summary>：默认显示的details元素的标题
+
+<datalist>：输入框提示列表（input的list属性值为datalist的id）
+
+<progress>：进度条。max 进度完成值，min 定义当前值
+
+<mark>：标记需要突出显示的文本
+
+<ruby>: 定义 ruby 注释，适用于中文注音或字符，搭配<rp> <rt>
+
+<rp>:  ruby 注释中使用，以定义不支持 ruby 元素的浏览器所显示的内容。
+
+<rt>: ruby 注释中使用，标签定义字符（中文注音或字符）的解释或发音。
+
+部分浏览器支持的
+
+bdi	允许您设置一段文本，使其脱离其父元素的文本方向设置。								*(IE不支持）
+
+command	定义用户可能调用的命令（比如单选按钮、复选框或按钮）							*(只有IE9支持)
+
+details	规定了用户可见的或者隐藏的需求的补充细节，供用户开启关闭的交互式控件			*(Chrome 和 Safari 6 支持)
+
+dialog	定义一个对话框、确认框或窗口。												*(Chrome 和 Safari 6 支持)
+
+summary	为 <details> 元素定义一个可见的标题。 当用户点击标题时会显示出详细信息		*(Chrome 和 Safari 6 支持)
+
+meter	定义度量衡。仅用于已知最大和最小值的度量。									*(IE不支持）
+
+wbr	标签规定在文本中的何处适合添加换行符。											*(IE不支持）
+
+
+2.新增表单控件
+
+email - 邮箱,提交表单时，会自动验证 email 域的值是否合法有效:						*(Safari不支持）
+
+tel - 电话																		*(都不支持)
+
+url - 网址																		*(Safari不支持）
+
+number - 数字（min,max,step数字间隔,value）										*(火狐不支持）
+
+range - 数字选择器（min,max,step数字间隔,value）									*(火狐不支持）
+
+search - 搜索框																	*(Safari google 支持）
+
+color - 颜色选择器																*(谷歌，欧朋 支持）		
+	
+Date 系列								
+
+date - 选取 日 月 年																*(IE 火狐 不支持）
+
+month - 选取月 年																*(IE 火狐 不支持）
+
+week - 选取周和年																*(IE 火狐 不支持）
+
+time - 选取时间（小时和分钟）														*(IE 火狐 不支持）
+
+datetime - 选取时间、⽇、⽉、年（UTC 时间）date和time的组合							*(Safari 欧朋 支持）
+
+datetime-local - 选择一个日期和时间 (无时区).										*(IE 火狐 不支持)
+
+
+3.新增表单属性
+
+placeholder：输入框提示信息
+
+autofocus：指定表单获取输入焦点
+
+required：必填字段
+
+pattern：正则验证
+
+novalidate 规定在提交表单时不应该验证 form 或 input 域。
+
+form：规定输入域所属的一个或多个表单（form属性所以用表单的id）
+
+formaction：重写表单的action属性
+
+formmethod：重写表单的method属性
+
+formenctype : 重写表单的enctype属性
+
+formnovalidate : 重写表单的novalidate属性
+
+formtarget : 重写表单的target属性
+	
+autocomplete：属性规定form或input域应该拥有自动完成功能
+
+4.新增表单验证
+
+novalidate：表单取消验证
+
+formnovalidate：submit元素取消验证
+
+setCustomValidity：自定义验证信息
